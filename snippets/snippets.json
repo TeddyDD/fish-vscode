@@ -1,0 +1,92 @@
+{
+	"begin": {
+		"prefix": "begin",
+		"body": "begin\n\t$0\nend",
+		"description": "begin ... end",
+		"scope": "source.fish"
+	},
+	"case": {
+		"prefix": "case",
+		"body": "case ${1:condition}\n\t$0",
+		"description": "case ...",
+		"scope": "source.fish"
+	},
+	"com": {
+		"prefix": "com",
+		"body": "complete -c ${1:command}${2: -n '${3:condition}'}${4: -s ${5:short_option}} ${6: -o ${7:oldstyle_long_option}}${8: -a ${9:OPTION_ARGUMENTS}}${10: --description '${11:description}'}\n$0",
+		"description": "complete (old-style options)",
+		"scope": "source.fish"
+	},
+	"com1": {
+		"prefix": "com",
+		"body": "complete -x -c ${1:command}${2: -n '${3:condition}'}${4: -s ${5:short_option}} ${6: -l ${7:long_option}}${8: -a ${9:OPTION_ARGUMENTS}}${10: --description '${11:description}'}\n$0",
+		"description": "complete (option with argument)",
+		"scope": "source.fish"
+	},
+	"com2": {
+		"prefix": "com",
+		"body": "complete -c ${1:command}${2: -n '${3:condition}'}${4: -s ${5:short_option}} ${6: -l ${7:long_option}}${8: -a ${9:OPTION_ARGUMENTS}}${10: --description '${11:description}'}\n$0",
+		"description": "complete",
+		"scope": "source.fish"
+	},
+	"for": {
+		"prefix": "for",
+		"body": "for ${1:element} in #{2:array}\n\t$0\nend",
+		"description": "for ... in ... end",
+		"scope": "source.fish"
+	},
+	"funj": {
+		"prefix": "funj",
+		"body": "function -j ${1:PID} ${2:event_handler_name}${3: -d \"${4:description}\"}\n\t$0\nend",
+		"description": "function (on job exit)",
+		"scope": "source.fish"
+	},
+	"funp": {
+		"prefix": "funp",
+		"body": "function -p ${1:PID} ${2:event_handler_name}${3: -d \"${4:description}\"}\n\t$0\t\nend",
+		"description": "function (on process exit)",
+		"scope": "source.fish"
+	},
+	"funs": {
+		"prefix": "funs",
+		"body": "function -s ${1:SIGSPEC} ${2:event_handler_name}${3: -d \"${4:description}\"}\t$0\t\nend",
+		"description": "function (on signal)",
+		"scope": "source.fish"
+	},
+	"funv": {
+		"prefix": "funv",
+		"body": "function -v ${1:VARIABLE_NAME} ${2:event_handler_name}${3: -d \"${4:description}\"}\n\t$0\t\nend",
+		"description": "function (on variable)",
+		"scope": "source.fish"
+	},
+	"fun": {
+		"prefix": "fun",
+		"body": "function ${1:function_name}${2: -d \"${3:description}\"}\n\t$0\nend",
+		"description": "function ... end",
+		"scope": "source.fish"
+	},
+	"if": {
+		"prefix": "if",
+		"body": "if ${1:condition}\n\t$2\nelse\n\t$3\nend",
+		"description": "if ... else ... end",
+		"scope": "source.fish"
+	},
+	"if1": {
+		"prefix": "if",
+		"body": "if ${1:condition}\n\t$0\nend",
+		"description": "if ... end",
+		"scope": "source.fish"
+	},
+	"sw": {
+		"prefix": "sw",
+		"body": "switch \\$${1:variable}\n\tcase ${2:condition}\n\t\t${0:commands}\nend",
+		"description": "switch ... case ... end",
+		"scope": "source.fish"
+	},
+	"while": {
+		"prefix": "while",
+		"body": "while ${1:condition}\n\t$0\nend",
+		"description": "while ... end",
+		"scope": "source.fish"
+	}
+}

@@ -1,0 +1,32 @@
+{
+    "name": "fish",
+    "displayName": "Fish shell",
+    "description": "Fish shell language support",
+    "version": "0.0.1",
+    "publisher": "TeddyDD",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fish",
+            "aliases": ["fish", "fish"],
+            "extensions": [".fish"],
+            "configuration": "./fish.configuration.json"
+        }],
+        "grammars": [{
+            "language": "fish",
+            "scopeName": "source.fish",
+            "path": "./syntaxes/fish.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "fish",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
