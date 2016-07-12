@@ -2,8 +2,14 @@
     "name": "fish",
     "displayName": "Fish shell",
     "description": "Fish shell language support",
-    "version": "0.0.1",
+    "icon": "./fish_icon.svg",
+    "version": "0.0.2",
     "publisher": "TeddyDD",
+    "galleryBanner": {
+        "color": "#0000FF",
+        "theme": "dark"
+    },
+    "license": "MIT",
     "engines": {
         "vscode": "^1.0.0"
     },
