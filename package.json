@@ -3,10 +3,15 @@
     "displayName": "Fish shell",
     "description": "Fish shell language support",
     "icon": "fish_icon.svg",
-    "version": "0.0.3",
+    "version": "0.0.4",
+    "homepage": "https://github.com/TeddyDD/fish-vscode",
     "repository": {
         "type": "git",
-        "url": "https://github.com/TeddyDD/fish-vscode"
+        "url": "https://github.com/TeddyDD/fish-vscode.git"
+    },
+    "bugs": {
+        "email": "vision360.daniel@gmail.com",
+        "url": "https://github.com/TeddyDD/fish-vscode/issues"
     },
     "publisher": "TeddyDD",
     "galleryBanner": {
