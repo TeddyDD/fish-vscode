@@ -26,6 +26,7 @@
             "id": "fish",
             "aliases": ["fish", "fish"],
             "extensions": [".fish"],
+            "firstLine": "^#!.*\\bfish",
             "configuration": "./fish.configuration.json"
         }],
         "grammars": [{
