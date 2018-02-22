@@ -1,5 +1,12 @@
 # Fish support for Visual Studio Code
 
+## Looking for maintainer
+
+I'm not longer interested in maintaing this extension since
+I'm not using VScode anymore. If someone is interested in
+taking it over, please open an issue. In the meantime
+I'm happy to merge PRs and upload new versions to marketplace.
+
 Support for Fish shell scripts.
 
 Simple conversion from [fish TextMate Bundle](https://github.com/l15n/fish-tmbundle).
