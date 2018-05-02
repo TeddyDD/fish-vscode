@@ -1,11 +1,10 @@
 # Fish support for Visual Studio Code
 
-## Looking for maintainer
+## No longer maintained
 
-I'm not longer interested in maintaing this extension since
-I'm not using VScode anymore. If someone is interested in
-taking it over, please open an issue. In the meantime
-I'm happy to merge PRs and upload new versions to marketplace.
+I'm not using VSCode anymore. Feel free to fork and take over.
+
+---
 
 Support for Fish shell scripts.
 
